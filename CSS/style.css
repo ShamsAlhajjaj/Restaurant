@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --base-bg-size: 100%;
+    --primary-font: "Dancing Script", cursive;
+    --second-font: 
+}
+
+/* @media screen and (max-width: 960px) {
+    :root{
+        --base-bg-size: 120%;
+    }
+}
+@media screen and (max-width: 720px) {
+    :root{
+        --base-bg-size: 140%;
+    }
+}
+@media screen and (max-width: 500px) {
+    :root{
+        --base-bg-size: 160%;
+    }
+} */
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 30px;
+}
+.bg-img{
+    height: 100vh;
+    /* width: var(--base-bg-size); */
+    position: absolute;
+    z-index: -100;
+    background-position: center;
+}
+.hero{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+.headers, .card-title, .percent{
+    font-family: var(--primary-font);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+header ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header ul a:hover{
+    color: #FFBE33;
+}
+.selected{
+    color: #FFBE33;
+}
+
+header li{
+    padding: 10px;
+
+}
+.btn{
+    text-decoration: none;
+    background-color: #FFBE33;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #FFBE33;
+    border: 2px solid #FFBE33;
+    padding: 8px 28px ;
+}
+
+.action-btns{
+    display: flex;
+    align-items: center;
+    
+}
+.icon  {
+    width: 16px;
+}
+.main-p{
+    text-align: left;
+    max-width: 500px;
+    margin-top: 15%;
+}
+.main-p p{
+    margin-bottom: 36px;
+}
+.slider{
+    margin-top: 100px;
+}
+.slider input{
+    display: none;
+}
+
+.non-selected-btn{
+    width: 12px;
+    margin-bottom: 4px;
+}
+.selected-btn{
+    width: 20px;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+.card{
+    background-color: #222831;
+    padding: 20px;
+    padding-right: 50px;
+    display: flex;
+    border-radius: 10px;
+    margin: 30px;
+
+}
+.img-container{
+    width: 200px;
+    height: 200px;
+    border: 6px solid #FFBE33;
+    border-radius: 50%;
+}
+.img-card{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.card-title{
+    font-size:24px;
+    padding: 20px;
+}
+.percent{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.menu *{
+    color: #000;
+    text-align: center;
+
+}
+.menu h1{
+    margin-top: 100px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.menu li{
+    margin: 30px 20px;
+    font-size: 1rem;
+}
+.menu .selected {
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 25px;
+    margin-top: 24px;
+}
+.menu-items{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    overflow-x:auto;
+}
+.menu-item{
+    background-color: #222831;
+    width: fit-content;
+    border-radius: 5%;
+    margin: 20px;
+    height: 500px;
+}
+.menu-item-img-container{
+    background-color: #F1F2F3;
+    width: 290px;
+    height: 210px;
+    border-radius: 5% 5% 0% 20%;
+    padding: 20px;
+}
+
+.menu-item-img{
+    width: 160px;
+    margin-top: 30px;
+}
+.menu-item-text{
+    background-color: #222831;
+    width: 290px;
+    height: 210px;
+    border-radius: 5%;
+    padding: 20px;
+}
+.menu-item-text *{
+    color: #fff;
+    text-align: left;
+
+}
+.price-container{
+    display: flex;
+    justify-content: space-between;
+}
+.price-cart-logo{
+    width: 20px;
+    display: block;
+    margin-right: 10px;
+    background-color: #FFBE33;
+    padding: 12px;
+    border-radius: 50%;
+    margin-top: -16px;
+}
+.about-bg{
+    background-color: #222831;
+
+}
+.about{
+    display: flex;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img{
+    max-width: 445px;
+    justify-items: center;
+    margin: auto;
+}
+.about-text{
+    text-align: left;
+    margin-left: 50px;
+}
+.about-text p{
+    padding-bottom: 34px;
+}
+.booking{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+.booking *{
+    color: #000;
+}
+.form-container{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.in{
+    width: 90%;
+    padding: 12px;
+    margin: 14px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+select{
+    width: 94%;
+    padding: 12px;
+    margin: 14px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.form-container .btn{
+    border: none;
+    color: #fff;
+    padding: 12px 50px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+.map{
+    width: 40%;
+    /* padding: 138px 0px 50px 50px; */
+    margin: 138px 0px 50px 50px;
+    border: none;
+    border-radius: 5%;
+}
+.feed-h{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+}
+.feedbacks .headers{
+    color: #000;
+}
+.feedbacks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.feedback{
+    max-width: 50%;
+}
+.comment{
+    background-color: #222831;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 10px;
+    margin: 30px;
+}
+.cx-name, .cx-pos{
+    display: block;
+    margin: 5px 0px;
+
+}
+.cx-name{
+    font-weight: bold;
+    font-size: larger;
+}
+.cx-img-container{
+    height: 115px;
+    width: 115px;
+    border: 6px solid #FFBE33;
+    border-radius: 50%;
+    margin: 30px;
+}
+.cx-img{
+    height: 115px;
+    border-radius: 50%;
+
+}
+footer{
+    padding-top: 50px;
+    display: flex;
+    background-color: #222831;
+    text-align: center;
+    height: 50vh;
+    justify-content: space-between;
+}
+.contact-us, .links, .opening-hours {
+    padding: 50px;
+}
+.contact-us a{
+    text-decoration: none;
+}
+.contact-us li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.links{
+    width: 400px;
+}
+.links-imgs{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 50px;
+}
+.links-imgs img{
+    width: 20px;
+}
+.link-img{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    background-color: #fff;
+    margin: px;
+    border-radius: 50%;
+}
